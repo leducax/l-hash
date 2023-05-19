@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>L'Hash | Decode/Incode</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/styles/css/main.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrypt-js/1.4.0/scrypt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/argon2-browser/dist/argon2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/adler32-js/dist/adler32.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/crc32-js/dist/crc32.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/crc32b-js/dist/crc32b.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fnvlib/dist/fnv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/murmurhash-js/murmurhash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/djb2-hash/dist/djb2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sdbm-hash/dist/sdbm.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/loselose-hash/dist/loselose.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pearson-hash/dist/pearson.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/farmhash/dist/farmhash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/haval/dist/haval.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/base64-js/dist/base64.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ripemd128/dist/ripemd128.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ripemd160/dist/ripemd160.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ripemd256/dist/ripemd256.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ripemd320/dist/ripemd320.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/whirlpool-js/dist/whirlpool.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tiger-hash/dist/tiger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/snefru-js/dist/snefru.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gost-hash/dist/gost.min.js"></script>
+</head>
+<body style="background-color: grey;">
+    <h1>Hachage Cryptographique</h1>
+  <label>
+    Texte à crypter/décrypter:
+    <input type="text" id="inputText" oninput="hash()">
+  </label>
+  
+  <div id="result">
+    <div class="encrypted">
+      <h3>Crypté</h3>
+      <div id="encryptedResult"></div>
+    </div>
+    <div class="decrypted">
+      <h3>Décrypté</h3>
+      <div id="decryptedResult"></div>
+    </div>
+  </div>
+  
+  <script src="/styles/js/4.0.0/crypto-js.min.js"></script>
+  <script src="/styles/js/2.4.3/bcrypt.min.js"></script>
+  <script src="/styles/js/1.2.0/scrypt.min.js"></script>
+  <script src="/styles/js/1.18.0/argon2.min.js"></script>
+  
+  <script src="/styles/js/main.js"></script>
+</body>
+</html>
